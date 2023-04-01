@@ -18,12 +18,31 @@ public class Basic {
         int sum=a+b;
         System.out.println("Sum is = "+sum);
     }
-
+    public static int sum(int a,int b){
+        int sum=a+b;
+        System.out.println(sum);
+        return 2;
+    }
+    public static int multiply(int a,int b){// parameter
+        int multi=a*b;//
+        return multi;
+    }
+//APNA COL
 
 
     public static void main(String[] args) {
         Hellowrold();
         Sum();
+        Scanner we=new Scanner(System.in);
+        int a=we.nextInt();
+        int b=we.nextInt();
+        sum(a,b);
+        int c=we.nextInt();
+        int d=we.nextInt();
+        System.out.println(multiply(a,b));//Arguments
+        int result=multiply(c,d);
+        System.out.println(result);
+
 
     }
 }
