@@ -1,0 +1,28 @@
+#include<stdio.h>
+int array[5];
+int top =-1;
+void push(){
+    if(top==4){
+        printf("OVERFOW");
+        return 0;
+    }
+    int n;
+    printf("Enter the data= ");
+    scanf("%d",&n);
+    top++;
+    array[top]=n;
+}
+void pop(){
+printf("\nPopped element: %d", array[top]);
+top--;
+if(top==-1){
+    printf("UNDER FLOW");
+    return 0;
+}
+}
+int main(){
+push();
+push();
+pop();
+push();
+}
